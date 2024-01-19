@@ -1,0 +1,188 @@
+.secundaria{
+    width: 35%;
+    background-color: rgb(110, 110, 110);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.principal{
+    width: 65%;
+    display: flex;
+    padding: 15px;
+    background-color: black;
+    flex-direction: column;
+    text-align: center;
+}
+.imagenesPeliculas{
+    height: 200px;
+    width: 150px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.principal p:hover{
+    background-color:rgb(63, 210, 210) ;
+    transition: 0.5s;
+}
+.imgcomentario{
+    height: 10%;
+    width: 25%;
+    align-items: center;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: black;
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+header{
+    background-color: rgb(78, 78, 78);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cabecera{
+    text-decoration: none;
+}
+.busqueda{
+    text-align: end;
+    margin-top: 10px;
+}
+.busqueda input{
+    padding: 10px;
+}
+.ComentariosSolos{
+    border: 1px solid #ddd;
+    margin-bottom: 200px;
+    padding: 10px;
+}
+.imgcomentario{
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.RedesSociales{
+    text-align: center;
+    margin-top: 20px;
+    margin: 5px;
+}
+
+.marketing img{
+    width: 15%;
+    align-items: center;
+    margin-right: 30px;
+    width: 20%;
+}
+.cabecera a{
+    padding: 30px;
+    color: black;
+}
+.cabecera img{
+    width: 5%;
+    align-items: start;
+}
+.general{
+    margin: 20px;
+    display: flex;
+}
+.usuario{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+.marketing h2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.footer{
+    text-align: center;
+    margin-top: auto;
+    background-color: rgb(202, 202, 90);
+    padding: 10px;
+    color: black;
+}
+.Comentarios{
+    margin-top: 20px;
+}
+h2.opiniones{
+    margin-bottom: 15px;
+    color: rgb(87, 55, 55);
+}
+
+
+
+@media only screen and (max-width:767px){
+    .general{
+        flex-direction: column;
+        align-items: center;
+    }
+    .secundaria, .principal{
+        width: 100%;
+    }
+    .cabecera{
+        order: 2;
+        width: 10%;
+        align-items: start;
+        flex-wrap: wrap;
+    }
+    .top-rated{
+        margin-top: 10px;
+    }
+    .thevisit{
+        visibility: hidden;
+        display: none;
+    }
+    .numero{
+        visibility: hidden;
+        display: none;
+    }
+    .secundaria{
+        order: 1;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:1023px){
+    .marketing img{
+        width: 20%;
+        margin-right: 0;
+
+    }
+    .thevisit{
+        visibility: hidden;
+        display: none;
+    }
+    .general{
+        flex-direction: column;
+        align-items: center;
+    }
+    .secundaria, .principal{
+        width: 100%;
+    }
+    .cabecera img{
+        width: 10%;
+        align-items: start;
+    }
+    .secundaria{
+        order: 1;
+    }
+    header{
+        justify-content: center;
+    }
+    .cabecera{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .cabcera a{
+        padding: 10px;
+    }
+}
